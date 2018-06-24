@@ -20,7 +20,7 @@ Esse projeto é um minerador de eventos que pega eventos do site (http://agendan
    
    
 ## Formato da resposta
-```json
+```
 [
 {
     "name": "string",
