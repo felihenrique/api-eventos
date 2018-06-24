@@ -13,7 +13,23 @@ Esse projeto é um minerador de eventos que pega eventos do site (http://agendan
 ## Utilizando a API.
 - O endpoint para obter os eventos é /eventos.
 - Há alguns filtros que podem ser utilizados, passando parametros na url, para que se possa pesquisar por eventos na lista.
-    - dataInicial e dataFinal: Filtro de data.
+    - dataInicial e dataFinal: Filtro de data. A data deve estar no formato: YYYY-MM-DD
     - name: Filtro de nome. Verifica se o nome do evento contem a expressão passada.
     - dia_semana: Deve ser um dos valores: (SEG, TER, QUA, QUI, SEX, SAB, DOM).
     - local: Funciona da mesma maneira que o nome, buscando no local do evento.
+   
+   
+## Formato da resposta
+```json
+[
+{
+    "name": "string",
+    "image": "string",
+    "data": "string",
+    "dia_semana": "string",
+    "categoria": "string",
+    "local": "string"
+},
+...
+]
+```
